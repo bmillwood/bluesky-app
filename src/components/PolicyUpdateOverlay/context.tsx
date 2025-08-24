@@ -54,7 +54,8 @@ export function Provider({children}: {children?: ReactNode}) {
       // only once logged in
       hasSession &&
       // only enabled in non-test environments
-      ENV !== 'e2e',
+      ENV !== 'e2e' &&
+      false,
   })
 
   const ctx = useMemo(
